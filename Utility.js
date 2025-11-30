@@ -28,26 +28,6 @@ function _addSVG(c, f, a) {
 } // _addSVG(c, f, a)
 
 /**
- * @description         User input, to get information about the CSV file
- */
-function addTitle() {
-    let input = prompt('Please input: "City, Year, Topic"');
-
-    let inputValues = input.split(',');
-    
-    let city = inputValues[0].trim();
-    let year = inputValues[1].trim();
-    let topic = inputValues[2].trim();
-
-    const title = document.getElementById('title');
-    title.textContent = `${city} (${year})`;
-    const subtitle = document.createElement('div');
-    subtitle.textContent = `${topic}`;
-
-    title.appendChild(subtitle);
-} // addTitle()
-
-/**
  * @description         Load CSV file, create a new FileReader object
  *                      and a new ClassData object.
  *                      Then create new PieChart object and call draw function

@@ -4,8 +4,6 @@ class PieChart {
     }
 
     draw() {
-        addTitle();
-
         const container = document.getElementById('container');
         const legend = document.getElementById('legend');
 
