@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Kreisdiagramm erstellen</title>
+    <title>CSV2PIECHART</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./Utility.js"        type="text/javascript"></script>
     <script src="./ClassData.js"      type="text/javascript"></script>
@@ -10,7 +10,11 @@
     <script src="./ClassPieChart.js"  type="text/javascript"></script>
   </head>
   <body>
-    <input type="file" id="csvFile" onchange="load()">
+    <input type="file" name="input-file" id="csvFile" onchange="load()">
+    <div id="arrow-ctn">
+      <span id="arrow">&#11025;</span>
+      <span id="arrow-text">Drop your CSV file here</span>
+    </div>
     <div id="box">
       <div id="container">
         <div id="legend"></div>
